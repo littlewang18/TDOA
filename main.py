@@ -54,7 +54,7 @@ if __name__ == '__main__':
     error = euclidean(signal_source_position, receiver_position)
 
     # 数据输出
-    results_directory = "Data/" + time.strftime("%Y-%m-%d-%H-%M-%S") + "/"
+    results_directory = "Result/" + time.strftime("%Y-%m-%d-%H-%M-%S") + "/"
     Path(results_directory).mkdir(parents=True, exist_ok=True)
     if export_plot:
         # signal_plot_export(duration, fs, padded_signal_init, signal_receiver, zero_padding, results_directory)
